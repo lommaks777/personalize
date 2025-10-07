@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета персонализации курса</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .checkbox-item input[type="checkbox"] {
+            width: auto;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .spinner {
+            border: 3px solid rgba(102, 126, 234, 0.3);
+            border-radius: 50%;
+            border-top: 3px solid #667eea;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .result {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .result.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .result.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .checkbox-group {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Персонализация курса</h1>
+            <p>Заполните анкету, чтобы получить персональные рекомендации</p>
+        </div>
+        
+        <form id="surveyForm">
+            <div class="form-group">
+                <label for="real_name">Ваше имя:</label>
+                <input type="text" id="real_name" name="real_name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="course">Выберите курс:</label>
+                <select id="course" name="course" required>
+                    <option value="">Выберите курс</option>
+                    <option value="Массаж ШВЗ">Массаж ШВЗ</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Что вас мотивирует изучать массаж?</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="motivation_help" name="motivation[]" value="help_others">
+                        <label for="motivation_help">Помочь близким</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="motivation_professional" name="motivation[]" value="professional_development">
+                        <label for="motivation_professional">Профессиональное развитие</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="motivation_health" name="motivation[]" value="health_improvement">
+                        <label for="motivation_health">Улучшение здоровья</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="motivation_income" name="motivation[]" value="additional_income">
+                        <label for="motivation_income">Дополнительный доход</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="target_clients">С кем планируете работать?</label>
+                <textarea id="target_clients" name="target_clients" placeholder="Опишите ваших будущих клиентов..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="skills_wanted">Какие навыки хотите освоить?</label>
+                <textarea id="skills_wanted" name="skills_wanted" placeholder="Опишите желаемые навыки..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label>Какие у вас есть страхи или опасения?</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fear_harm" name="fears[]" value="harm_client">
+                        <label for="fear_harm">Навредить клиенту</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fear_technique" name="fears[]" value="wrong_technique">
+                        <label for="fear_technique">Неправильная техника</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fear_confidence" name="fears[]" value="lack_confidence">
+                        <label for="fear_confidence">Недостаток уверенности</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fear_time" name="fears[]" value="not_enough_time">
+                        <label for="fear_time">Недостаточно времени</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="wow_result">Какой результат вас больше всего впечатлит?</label>
+                <textarea id="wow_result" name="wow_result" placeholder="Опишите желаемый результат..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="practice_model">На ком планируете практиковаться?</label>
+                <select id="practice_model" name="practice_model">
+                    <option value="">Выберите модель</option>
+                    <option value="family">Семья</option>
+                    <option value="friends">Друзья</option>
+                    <option value="pets">Домашние животные</option>
+                    <option value="mannequin">Манекен</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn" id="submitBtn">
+                🎯 Создать персональный курс
+            </button>
+            
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Создаем персональный курс...</p>
+            </div>
+            
+            <div class="result" id="result"></div>
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById('surveyForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const loading = document.getElementById('loading');
+            const result = document.getElementById('result');
+            
+            // Показываем загрузку
+            submitBtn.disabled = true;
+            loading.style.display = 'block';
+            result.style.display = 'none';
+            
+            // Собираем данные формы
+            const formData = new FormData(this);
+            const data = {
+                real_name: formData.get('real_name'),
+                course: formData.get('course'),
+                motivation: formData.getAll('motivation[]'),
+                target_clients: formData.get('target_clients'),
+                skills_wanted: formData.get('skills_wanted'),
+                fears: formData.getAll('fears[]'),
+                wow_result: formData.get('wow_result'),
+                practice_model: formData.get('practice_model'),
+                uid: 'user_' + Date.now()
+            };
+            
+            try {
+                const response = await fetch('process_survey.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                const responseData = await response.json();
+                
+                if (responseData.success) {
+                    result.className = 'result success';
+                    result.innerHTML = `
+                        <h3>🎉 Персональный курс создан!</h3>
+                        <p>Ваш курс адаптирован под ваши цели и потребности.</p>
+                        <a href="view_shvz_course.php" style="color: #667eea; text-decoration: none;">
+                            Перейти к курсу →
+                        </a>
+                    `;
+                } else {
+                    result.className = 'result error';
+                    result.innerHTML = `
+                        <h3>❌ Ошибка</h3>
+                        <p>${responseData.error}</p>
+                    `;
+                }
+            } catch (error) {
+                result.className = 'result error';
+                result.innerHTML = `
+                    <h3>❌ Ошибка</h3>
+                    <p>Произошла ошибка при отправке данных: ${error.message}</p>
+                `;
+            } finally {
+                // Скрываем загрузку
+                loading.style.display = 'none';
+                submitBtn.disabled = false;
+                result.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
