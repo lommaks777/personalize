@@ -1,0 +1,270 @@
+{
+    "user_1757557358_46fc98ea": {
+        "user_id": "user_1757557358_46fc98ea",
+        "name": "Алексей",
+        "course": "Массаж ШВЗ",
+        "created_at": "2025-09-11 02:22:38",
+        "experience": "self_taught",
+        "motivation": [
+            "new_profession",
+            "extra_income"
+        ],
+        "motivation_other": "",
+        "target_clients": "Женщины 40+",
+        "skills_wanted": "выполнять правильный и эффективный массаж, который будет нравится моим клиентам",
+        "fears": [
+            "technique_fail",
+            "no_clients"
+        ],
+        "fears_other": "",
+        "wow_result": "Хотел бы чтобы к концу курса у меня уже был 1 платный клиент",
+        "practice_model": "муж",
+        "age": "Не указан",
+        "massage_experience": "self_taught",
+        "skill_level": "Средний",
+        "goals": "выполнять правильный и эффективный массаж, который будет нравится моим клиентам",
+        "problems": "technique_fail, no_clients",
+        "available_time": "20-30 минут в день",
+        "preferences": "Хотел бы чтобы к концу курса у меня уже был 1 платный клиент"
+    },
+    "user_1757557524_46fc98ea": {
+        "user_id": "user_1757557524_46fc98ea",
+        "name": "Алексей",
+        "course": "Массаж ШВЗ",
+        "created_at": "2025-09-11 16:04:34",
+        "experience": "self_taught",
+        "motivation": [
+            "Новая профессия",
+            "Дополнительный доход"
+        ],
+        "motivation_other": "",
+        "target_clients": "пожилые люди",
+        "skills_wanted": "правильно делать массаж, чтобы он нравился моим клиентами, чтобы они звали своих друзей прийти на него",
+        "fears": [
+            "Не получится техника"
+        ],
+        "fears_other": "",
+        "wow_result": "10 постоянных клиентов на момент окончания курса",
+        "practice_model": "на кошке",
+        "age": "Не указан",
+        "massage_experience": "self_taught",
+        "skill_level": "Начинающий",
+        "goals": "правильно делать массаж, чтобы он нравился моим клиентами, чтобы они звали своих друзей прийти на него",
+        "problems": "Не получится техника",
+        "available_time": "20-30 минут в день",
+        "preferences": "10 постоянных клиентов на момент окончания курса"
+    },
+    "user_1234567890_abc12345": {
+        "user_id": "user_1234567890_abc12345",
+        "name": "Алены",
+        "course": "Массаж ШВЗ",
+        "created_at": "2025-09-11 15:42:56",
+        "experience": "self_taught",
+        "motivation": [
+            "Дополнительный доход",
+            "Помощь близким"
+        ],
+        "motivation_other": "",
+        "target_clients": "спортсмены",
+        "skills_wanted": "правильно делать массаж, чтобы он нравился моим клиентами, чтобы они звали своих друзей прийти на него",
+        "fears": [
+            "Не получится техника",
+            "Не смогу найти клиентов"
+        ],
+        "fears_other": "",
+        "wow_result": "10 постоянных клиентов на момент окончания курса",
+        "practice_model": "на своем парне",
+        "age": "Не указан",
+        "massage_experience": "self_taught",
+        "skill_level": "Начинающий",
+        "goals": "правильно делать массаж, чтобы он нравился моим клиентами, чтобы они звали своих друзей прийти на него",
+        "problems": "Не получится техника, Не смогу найти клиентов",
+        "available_time": "20-30 минут в день",
+        "preferences": "10 постоянных клиентов на момент окончания курса"
+    },
+    "user_1234567890_abc12344": {
+        "user_id": "user_1234567890_abc12344",
+        "name": "Алексей",
+        "course": "Массаж ШВЗ",
+        "created_at": "2025-09-12 16:57:18",
+        "experience": "self_taught",
+        "motivation": [
+            "Новая профессия",
+            "Дополнительный доход"
+        ],
+        "motivation_other": "",
+        "target_clients": "пожилые люди",
+        "skills_wanted": "правильно делать массаж, чтобы он нравился моим клиентами, чтобы они звали своих друзей прийти на него",
+        "fears": [
+            "Не получится техника"
+        ],
+        "fears_other": "",
+        "wow_result": "10 постоянных клиентов на момент окончания курса",
+        "practice_model": "на кошке",
+        "age": "Не указан",
+        "massage_experience": "self_taught",
+        "skill_level": "Начинающий",
+        "goals": "правильно делать массаж, чтобы он нравился моим клиентами, чтобы они звали своих друзей прийти на него",
+        "problems": "Не получится техника",
+        "available_time": "20-30 минут в день",
+        "preferences": "10 постоянных клиентов на момент окончания курса"
+    },
+    "user_1234567890_abc1654": {
+        "user_id": "user_1234567890_abc1654",
+        "name": "Алексей",
+        "course": "Массаж ШВЗ",
+        "created_at": "2025-09-12 18:49:34",
+        "experience": "self_taught",
+        "motivation": [
+            "Новая профессия",
+            "Дополнительный доход"
+        ],
+        "motivation_other": "",
+        "target_clients": "пожилые люди",
+        "skills_wanted": "правильно делать массаж, чтобы он нравился моим клиентами, чтобы они звали своих друзей прийти на него",
+        "fears": [
+            "Не получится техника"
+        ],
+        "fears_other": "",
+        "wow_result": "10 постоянных клиентов на момент окончания курса",
+        "practice_model": "на кошке",
+        "age": "Не указан",
+        "massage_experience": "self_taught",
+        "skill_level": "Начинающий",
+        "goals": "правильно делать массаж, чтобы он нравился моим клиентами, чтобы они звали своих друзей прийти на него",
+        "problems": "Не получится техника",
+        "available_time": "20-30 минут в день",
+        "preferences": "10 постоянных клиентов на момент окончания курса"
+    },
+    "user_1234567890_abc165465": {
+        "user_id": "user_1234567890_abc165465",
+        "name": "Алексей",
+        "course": "Массаж ШВЗ",
+        "created_at": "2025-09-12 18:55:46",
+        "experience": "self_taught",
+        "motivation": [
+            "Новая профессия",
+            "Дополнительный доход"
+        ],
+        "motivation_other": "",
+        "target_clients": "пожилые люди",
+        "skills_wanted": "правильно делать массаж, чтобы он нравился моим клиентами, чтобы они звали своих друзей прийти на него",
+        "fears": [
+            "Не получится техника"
+        ],
+        "fears_other": "",
+        "wow_result": "10 постоянных клиентов на момент окончания курса",
+        "practice_model": "на своей маме",
+        "age": "Не указан",
+        "massage_experience": "self_taught",
+        "skill_level": "Начинающий",
+        "goals": "правильно делать массаж, чтобы он нравился моим клиентами, чтобы они звали своих друзей прийти на него",
+        "problems": "Не получится техника",
+        "available_time": "20-30 минут в день",
+        "preferences": "10 постоянных клиентов на момент окончания курса"
+    },
+    "user_1234567890_abc12345у": {
+        "user_id": "user_1234567890_abc12345у",
+        "name": "Алексей",
+        "course": "Массаж ШВЗ",
+        "created_at": "2025-09-12 19:59:07",
+        "experience": "self_taught",
+        "motivation": [
+            "Новая профессия",
+            "Дополнительный доход"
+        ],
+        "motivation_other": "",
+        "target_clients": "пожилые люди",
+        "skills_wanted": "правильно делать массаж, чтобы он нравился моим клиентами, чтобы они звали своих друзей прийти на него",
+        "fears": [
+            "Не получится техника"
+        ],
+        "fears_other": "",
+        "wow_result": "10 постоянных клиентов на момент окончания курса",
+        "practice_model": "на своей маме",
+        "age": "Не указан",
+        "massage_experience": "self_taught",
+        "skill_level": "Начинающий",
+        "goals": "правильно делать массаж, чтобы он нравился моим клиентами, чтобы они звали своих друзей прийти на него",
+        "problems": "Не получится техника",
+        "available_time": "20-30 минут в день",
+        "preferences": "10 постоянных клиентов на момент окончания курса"
+    },
+    "user_1234567890_abc1234523": {
+        "user_id": "user_1234567890_abc1234523",
+        "name": "Алексей",
+        "course": "Массаж ШВЗ",
+        "created_at": "2025-09-12 21:15:27",
+        "experience": "self_taught",
+        "motivation": [
+            "Новая профессия",
+            "Дополнительный доход"
+        ],
+        "motivation_other": "",
+        "target_clients": "пожилые люди",
+        "skills_wanted": "правильно делать массаж, чтобы он нравился моим клиентами, чтобы они звали своих друзей прийти на него",
+        "fears": [
+            "Не получится техника"
+        ],
+        "fears_other": "",
+        "wow_result": "10 постоянных клиентов на момент окончания курса",
+        "practice_model": "на своей маме",
+        "age": "Не указан",
+        "massage_experience": "self_taught",
+        "skill_level": "Начинающий",
+        "goals": "правильно делать массаж, чтобы он нравился моим клиентами, чтобы они звали своих друзей прийти на него",
+        "problems": "Не получится техника",
+        "available_time": "20-30 минут в день",
+        "preferences": "10 постоянных клиентов на момент окончания курса"
+    },
+    "test_user_1759784080": {
+        "name": "Анна",
+        "experience": "beginner",
+        "goals": [
+            "relaxation",
+            "pain_relief"
+        ],
+        "preferences": {
+            "session_duration": "30_minutes",
+            "intensity": "gentle",
+            "focus_areas": [
+                "neck",
+                "shoulders"
+            ]
+        },
+        "created_at": "2025-10-06 20:54:40"
+    },
+    "test_final_1759784250": {
+        "name": "Тестовый пользователь",
+        "experience": "intermediate",
+        "goals": [
+            "skill_improvement",
+            "professional_development"
+        ],
+        "preferences": {
+            "session_duration": "45_minutes",
+            "intensity": "moderate",
+            "focus_areas": [
+                "neck",
+                "shoulders",
+                "back"
+            ]
+        },
+        "created_at": "2025-10-06 20:57:30"
+    },
+    "guest_1759784568": {
+        "name": "Гость",
+        "experience": "beginner",
+        "goals": [
+            "general_learning"
+        ],
+        "preferences": {
+            "session_duration": "30_minutes",
+            "intensity": "gentle",
+            "focus_areas": [
+                "general"
+            ]
+        },
+        "created_at": "2025-10-06 21:02:48"
+    }
+}

@@ -1,10 +1,12 @@
 # Исключаем большие файлы
-store/
 cache/
 *.mp4
 *.wav
-*.txt
-*.json
+
+# Разрешаем данные курса (только txt и json файлы)
+!store/
+!store/**/*.txt
+!store/**/*.json
 
 # Временные файлы
 temp_*
